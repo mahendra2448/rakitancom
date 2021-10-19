@@ -1,0 +1,47 @@
+@import './typo';
+.btn-master {
+    font-size: .8rem;
+    font-weight: map-get($font-weights, bold);
+    padding: .7rem 1.5rem;
+    letter-spacing: .08rem;
+    border: none;
+    border-radius: .5rem;
+    transition: background-color 0.2s ease;
+    &:hover {
+        background-color: $primary;
+    }
+}
+
+.btn-primary {
+    @extend .btn-master;
+    color: $white;
+    background-color: $light-red;
+}
+
+.btn-secondary {
+    @extend .btn-master;
+    color: $white;
+    background-color: $light-blue;
+}
+
+.btn-third {
+    @extend .btn-master;
+    color: $light-blue;
+    padding: .7rem 2.5rem;
+    background-color: $white;
+    &:hover {
+        background-color: $gray
+    }
+}
+
+.btn-ctc {
+    @extend .btn-master;
+    color: $white;
+    margin-left: 2.5rem;
+    padding: .5rem 1.3rem;
+    background-color: $light-red;
+    &:hover {
+        color: $white;
+        text-decoration: none;
+    }
+}
